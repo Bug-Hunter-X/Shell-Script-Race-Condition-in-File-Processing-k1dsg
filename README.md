@@ -1,0 +1,3 @@
+# Shell Script Race Condition
+
+This repository demonstrates a race condition in a shell script that processes files in a directory.  The script uses `find` and a `while` loop, which can lead to newly created files being missed if they appear during the processing of existing files.  The solution demonstrates a more robust approach using `xargs` to parallelize processing and avoid the race condition. 
